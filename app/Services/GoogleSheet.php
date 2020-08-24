@@ -1,8 +1,10 @@
 <?php
 
-
 namespace App\Services;
 
+use Google_Client;
+use Google_Service_Sheets;
+use Google_Service_Sheets_ValueRange;
 
 class GoogleSheet
 {
@@ -13,11 +15,11 @@ class GoogleSheet
     public function __construct()
     {
         $this->spreadSheetId = config('readdataapi.google_sheet_id');
-        $this->client = new \Google_Client();
+        $this->client = new Google_Client();
         $this->client->setAuthConfig(storage_path('credentials.json'));
         $this->client - addScope('https://www.googleapis.com/auth/spreadsheets');
 
-        $this->googleSheetService = new \Google_Service_Sheets($this->client);
+        $this->googleSheetService = new Google_Service_Sheets($this->client);
     }
 
     public function readGoogleSheet()

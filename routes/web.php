@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function (\App\Services\GoogleSheet $googleSheet) {
+    $googleSheet->readGoogleSheet();
     return view('welcome');
 });

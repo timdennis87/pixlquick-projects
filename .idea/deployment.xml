@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="pixlquick-projects - LIVE" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="pixlquick-projects - LIVE" uploadOnCheckin="505acc4d-7185-40be-9031-2e45afd3ca68" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="pixlquick-projects - LIVE">
         <serverdata>
@@ -10,5 +10,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="pixlquick-projects - LIVE" />
   </component>
 </project>
